@@ -17,6 +17,7 @@ textarea {
 /*To give the same size to several different widgets*/
 input,
 textarea,
+label,
 select,
 button {
   width: 150px;
@@ -52,12 +53,14 @@ meter {
 }
 
 body {
-    display: flex;
-    background-color: #aca7a5;
+   display: flex;
+   flex:1 1 auto;
+   background-color: #8eccb5;
 }
 
 .img-background {
-    width: 50%;
+    display: flex;
+    width: 45%;
     height: 100%;
     
 }
@@ -65,13 +68,14 @@ body {
 .img-background img{
     width: 100vh;
     height: 100vh;
+    flex:1 1 auto;
+    
     
 }
 
 
 .sign-up {
-    margin-top: 100px;
-    
+    margin-top: 100px;    
 }
 
 .sign-up-head {
@@ -87,31 +91,53 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
 }
 
 .sign-up-form{
+    
     position: relative;
     display: flex;
+    flex:1 1 auto;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 1px solid black;
+    border-top: 1.5px solid #02733E;
+    border-bottom: 1.5px solid #02733E;
+    box-shadow: 5px 0 5px  #038C65; 
     height: 280px;
+    background-color: #6FBFB7;
+    
     
 }
-
+.sign-up-form input:focus{
+    border: 25px solid #5798ee;
+    box-shadow: 5px 0 5px  #038C65;
+    border-radius: 5px;   
+}
 .sign-up-form input {
+    font-family: Arial, Helvetica, sans-serif;
     width: 250px;
     padding: 10px;
-    border: 1px solid black;
+    border: 1.5px solid #02733E;
     border-radius: 5px;
     
 }
 
+
+
+.sign-up-form input:required {
+    border: 1.5px solid #ff0000;
+    border-radius: 5px;   
+}
+
+
+
 .sign-up-form h1 {
     position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     margin-left: 10vh;
+    color: #ffffff;
 }
 
 .sign-up-form div{
@@ -122,6 +148,7 @@ body {
     margin-top: 10px;
     margin-bottom: -8px;
     font-size: 15px;
+    color: #ffffff;
 }
 
 .left{
@@ -141,11 +168,10 @@ body {
     margin-top: 30px;
     margin-left: 10vh;
     background-color: #03A678 ;
-    color: #fcfcfc;
+    color: #ffffff;
 }
 
 .already-acc {
-    font-family: inherit;
     margin-top: 25px;
     margin-left: 10vh;
     font-size: 20px;
