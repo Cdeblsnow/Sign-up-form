@@ -10,7 +10,6 @@ label,
 input,
 select,
 textarea {
-  font-family: inherit;
   font-size: 100%;
 }
 
@@ -42,6 +41,9 @@ meter {
   height: 30px;
 }
 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 @font-face {
@@ -54,7 +56,7 @@ meter {
 
 body {
    display: flex;
-   background-color: #8eccb5;
+   background-color: #c7e6da;
 }
 
 .img-background {
@@ -73,7 +75,6 @@ body {
 }
 
 .img-credits{
-    font-family: inherit;
     font-size: 20px;
     color: #ffffff;
     position: absolute;
@@ -86,13 +87,13 @@ body {
 }
 
 .logo{
-    display: inherit;
+    display: flex;
     position: absolute;
     justify-content: center;
     flex-wrap: wrap;
     align-content: space-around;
     align-items: center;
-    top: 112px;
+    top: 100px;
     width: 100vh;
     height: 150px;
     background-color: rgb(0, 0, 0,.5);
@@ -114,7 +115,7 @@ body {
 .sign-up {
     display: inherit;
     flex-direction: column;
-    margin-top: 100px;   
+    margin-top: 20vh;   
     min-width: 700px ; 
     overflow-wrap: break-word;
     flex:1 1 auto;
@@ -133,7 +134,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
-    color: #ffffff;
+    color: #050505;
     
 }
 
@@ -188,7 +189,7 @@ input:required:focus {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
     margin-left: 10vh;
-    color: #ffffff;
+    color: #070707;
 }
 
 .sign-up-form div{
@@ -222,10 +223,32 @@ input:required:focus {
     color: #ffffff;
 }
 
+.create-acc:hover{
+    background-color: #02733E;
+    box-shadow: 0 2px 0 2px rgb(0,0,0,.2);
+}
+
+.create-acc:hover{
+    background-color: #02733E;
+    box-shadow: -2px 2px rgb(0,0,0,.2);
+}
+
+.create-acc:active{
+    background-color: #02733E;
+    box-shadow: -0 3px  rgb(0,0,0,.3);
+    transform: translateY(4px);
+}
+
 .already-acc {
     margin-top: 25px;
     margin-left: 10vh;
     font-size: 20px;
+    
+}
+
+.already-acc a{
+    color: #02733E;
+    text-decoration: none;
     
 }
 
